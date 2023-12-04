@@ -1,0 +1,21 @@
+# Mac
+.DS_Store
+
+# Dev Environment
+__pycache__
+launch.json
+settings.json
+.vscode
+client_secret.json
+.env
+
+# Runtime
+.out
+
+# lint cach
+.mypy_cache
+
+# Pants workspace files
+/.pants.*
+/dist/
+/.pids

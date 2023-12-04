@@ -1,0 +1,25 @@
+[GLOBAL]
+pants_version = "2.18.1"
+pants_distdir = ""
+
+backend_packages = [
+  "pants.backend.python",
+  "pants.backend.docker",
+]
+
+[python]
+interpreter_constraints = ["CPython==3.10.*"]
+# enable_resolves = true
+
+[python-bootstrap]
+search_path = [
+  # This will use all interpreters in `$(pyenv root)/versions`.
+  "<PYENV>",
+  # Brew usually installs Python here.
+  "/usr/local/bin",
+  # For CI
+  "/opt/hostedtoolcache/Python/3.10.13/x64"
+]
+
+[python-infer]
+use_rust_parser = true

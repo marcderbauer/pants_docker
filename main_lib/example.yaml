@@ -1,0 +1,9 @@
+---
+example_dict:
+  "hello": "world"
+  "how": "are you"
+
+example_list:
+  - item 1
+  - item 2
+  - item 3
