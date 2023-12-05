@@ -1,6 +1,6 @@
 [GLOBAL]
 pants_version = "2.18.1"
-pants_distdir = ""
+pants_distdir = "" # TODO: Remove...
 
 backend_packages = [
   "pants.backend.python",
@@ -23,3 +23,6 @@ search_path = [
 
 [python-infer]
 use_rust_parser = true
+
+[environments-preview.names]
+linux="web:python_linux"

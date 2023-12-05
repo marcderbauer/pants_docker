@@ -1,4 +1,4 @@
-FROM python:3.10 AS base
+FROM python:3.10.13-bookworm AS base
 
 # Copy the server.pex file into the /app directory in the Docker image
 COPY web/server.pex server.pex
